@@ -14,7 +14,8 @@ import { UserComponent } from './user/user.component';
 
 
 import { Routes, RouterModule } from '@angular/router';
-import { DriverComponent } from './driver/driver.component';
+import { ManagementComponent } from './management/management.component';
+import { ManagerComponent } from './manager/manager.component';
 
 
 @NgModule({
@@ -26,7 +27,9 @@ FooterComponent,
 DashboardComponent,
 LoginComponent,
 UserComponent,
-DriverComponent
+
+ManagementComponent,
+ManagerComponent
 ],
 imports: [
 BrowserModule,
