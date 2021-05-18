@@ -8,13 +8,17 @@ import { UserComponent } from './user/user.component';
 
 
 
+
 const routes: Routes = [
   
-  {path: '', component: LoginComponent},
+
+  // {path: '', component: LoginComponent},
+ 
   
   {path: 'driver', component: DriverComponent},
   {path: 'User', component: UserComponent},
-  {path: 'login', component: DashboardComponent},
+  {path: 'Login', component: LoginComponent},
+  {path: '**', component: DashboardComponent},
  // {path: '**', component: DashboardComponent},
 ];
 
