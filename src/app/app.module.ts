@@ -1,3 +1,5 @@
+//เมืื่อสร้างแต่ละ คอมโพเน้นมาแก้ตรงนี้
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +13,20 @@ import { DriverComponent } from './driver/driver.component';
 import { ManagerComponent } from './manager/manager.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
+
+
+import { Routes, RouterModule } from '@angular/router';
+
+const routes : Routes =[
+    {path: '', redirectTo:'/login', pathMatch: 'full'},
+    {path: 'login', component:LoginComponent},
+    {path: '**', redirectTo: '/login'}
+]
+
+
+
+
+
 @NgModule({
 declarations: [
 AppComponent,
@@ -26,9 +42,11 @@ UserComponent
 imports: [
 BrowserModule,
 AppRoutingModule,
-HttpClientModule
+HttpClientModule,
+RouterModule.forRoot(routes)
 ],
 providers: [],
 bootstrap: [AppComponent]
 })
 export class AppModule { }
+
