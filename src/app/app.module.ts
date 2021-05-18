@@ -9,8 +9,6 @@ import { MenuComponent } from './Layout/menu/menu.component';
 import { FooterComponent } from './Layout/footer/footer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { DriverComponent } from './driver/driver.component';
-import { ManagerComponent } from './manager/manager.component';
 import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 
@@ -34,8 +32,6 @@ HeaderComponent,
 MenuComponent,
 FooterComponent,
 DashboardComponent,
-DriverComponent,
-ManagerComponent,
 LoginComponent,
 UserComponent
 ],
