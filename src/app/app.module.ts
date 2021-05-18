@@ -10,6 +10,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { DriverComponent } from './driver/driver.component';
 import { ManagerComponent } from './manager/manager.component';
 import { LoginComponent } from './login/login.component';
+import { UserComponent } from './user/user.component';
 @NgModule({
 declarations: [
 AppComponent,
@@ -19,7 +20,8 @@ FooterComponent,
 DashboardComponent,
 DriverComponent,
 ManagerComponent,
-LoginComponent
+LoginComponent,
+UserComponent
 ],
 imports: [
 BrowserModule,
