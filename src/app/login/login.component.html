@@ -1,4 +1,6 @@
-<div class="login-box">
+
+
+<div class="login-box" style="margin: auto; width: 30%; padding: 10px;">
     <div class="login-logo">
       <a href="../../index2.html"><b>LogIN</b>TAS</a>
     </div>
@@ -7,7 +9,7 @@
       <div class="card-body login-card-body">
         <p class="login-box-msg">Sign in to start your session</p>
   
-        <form action="../../index3.html" method="post">
+        <form>
           <div class="input-group mb-3">
             <input type="email" class="form-control" placeholder="Email">
             <div class="input-group-append">
@@ -35,7 +37,8 @@
             </div>
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" class="btn btn-primary btn-block">LogIN</button>
+              <!-- Angular event on click -->
+              <button type="submit" class="btn btn-primary btn-block" (click)=Function() >LogIN</button> <!--beer write-->
             </div>
             <!-- /.col -->
           </div>
@@ -58,7 +61,7 @@
         <!-- <p class="mb-0">
           <a href="register.html" class="text-center">Register a new membership</a>
         </p> -->
-      </div> -->
+      </div> 
       <!-- /.login-card-body -->
     </div>
   </div>

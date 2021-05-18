@@ -14,15 +14,7 @@ import { UserComponent } from './user/user.component';
 
 
 import { Routes, RouterModule } from '@angular/router';
-
-const routes : Routes =[
-    {path: '', redirectTo:'/login', pathMatch: 'full'},
-    {path: 'login', component:LoginComponent},
-    {path: '**', redirectTo: '/login'}
-]
-
-
-
+import { DriverComponent } from './driver/driver.component';
 
 
 @NgModule({
@@ -33,13 +25,15 @@ MenuComponent,
 FooterComponent,
 DashboardComponent,
 LoginComponent,
-UserComponent
+UserComponent,
+DriverComponent
 ],
 imports: [
 BrowserModule,
 AppRoutingModule,
 HttpClientModule,
-RouterModule.forRoot(routes)
+RouterModule
+
 ],
 providers: [],
 bootstrap: [AppComponent]
