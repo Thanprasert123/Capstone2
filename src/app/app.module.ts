@@ -16,6 +16,7 @@ import { UserComponent } from './user/user.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ManagementComponent } from './management/management.component';
 import { ManagerComponent } from './manager/manager.component';
+import { FinanceComponent } from './finance/finance.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ LoginComponent,
 UserComponent,
 
 ManagementComponent,
-ManagerComponent
+ManagerComponent,
+FinanceComponent
 ],
 imports: [
 BrowserModule,

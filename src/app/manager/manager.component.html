@@ -9,9 +9,45 @@
             <!-- <a routerLink="Login">Login</a><br>
             <a href="/Login"> Login</a><br> -->
             <!-- <a routerLink="User">User</a> -->
-            <h4>Date Time IN&OUT</h4><!--Calender-->
-           
-    
+            
+            <div class="date">
+              <h4>Date Time IN</h4><!--Calender-->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+              <input type="date" data-date="" data-date-format="DD/MM/YYYY" value="2020-08-09">
+         
+
+              <script>
+                  $("input").on("change", function() {
+                   this.setAttribute(
+                 "data-date",
+                   moment(this.value, "YYYY-MM-DD")
+                   .format( this.getAttribute("data-date-format") )
+                   )
+                  }).trigger("change")
+              </script>
+           <div class="datatable">
+          </div>
+         
+          <div class="date">
+             <h4>Date Time OUT</h4><!--Calender-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+            <input type="date" data-date="" data-date-format="DD/MM/YYYY" value="2020-08-09">
+          
+
+            <script>
+                $("input").on("change", function() {
+                 this.setAttribute(
+               "data-date",
+                 moment(this.value, "YYYY-MM-DD")
+                 .format( this.getAttribute("data-date-format") )
+                 )
+                }).trigger("change")
+            </script>
+         <div class="datatable">
+        </div>
+      
+
+
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -23,6 +59,8 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+
+
 
     <!-- Main content -->
     <section class="content">
