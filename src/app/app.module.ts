@@ -17,6 +17,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { ManagementComponent } from './management/management.component';
 import { ManagerComponent } from './manager/manager.component';
 import { FinanceComponent } from './finance/finance.component';
+import { JournalizingTransactionComponent } from './journalizing-transaction/journalizing-transaction.component';
+import { GeneralLedgarComponent } from './general-ledgar/general-ledgar.component';
+import { ReconciliationSheetComponent } from './reconciliation-sheet/reconciliation-sheet.component';
+import { IncomestatementComponent } from './incomestatement/incomestatement.component';
+import { InventorystockcardComponent } from './inventorystockcard/inventorystockcard.component';
+import { PurchasingorderComponent } from './purchasingorder/purchasingorder.component';
+import { InvoiceComponent } from './invoice/invoice.component';
 import { MainComponent } from './components/main/main.component';
 
 
@@ -32,8 +39,7 @@ UserComponent,
 
 ManagementComponent,
 ManagerComponent,
-FinanceComponent,
-MainComponent
+FinanceComponent
 ],
 imports: [
 BrowserModule,
