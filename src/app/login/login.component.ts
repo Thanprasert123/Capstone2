@@ -14,6 +14,6 @@ export class LoginComponent implements OnInit {
   }
   Function(){
     // alert("Click");
-    this.router.navigateByUrl('/Dashboard')
+    this.router.navigateByUrl('/main')
   }
 }

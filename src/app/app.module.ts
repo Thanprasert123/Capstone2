@@ -17,6 +17,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ManagementComponent } from './management/management.component';
 import { ManagerComponent } from './manager/manager.component';
 import { FinanceComponent } from './finance/finance.component';
+import { MainComponent } from './components/main/main.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ UserComponent,
 
 ManagementComponent,
 ManagerComponent,
-FinanceComponent
+FinanceComponent,
+MainComponent
 ],
 imports: [
 BrowserModule,
