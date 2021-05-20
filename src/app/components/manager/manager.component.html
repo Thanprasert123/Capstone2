@@ -135,5 +135,19 @@
                   <h3 class="card-title">
                     <i class="fas fa-map-marker-alt mr-1"></i>
                     User Data <!--user all information-->
+                    <thead > <!-- angular text-->
+                      <tr>
+                          <th>UserID   </th>
+                          <th>UserName_By_Email2</th>
+                          <th>Email</th>
+                          <th>NameUser</th>
+            
+                      </tr>
+                  </thead>
+                  <tr *ngFor="let dataItem of userAll">
+                    <td>{{dataItem.UserID}}</td>
+                    <td>{{dataItem.UserName_By_Email}}</td>
+                    <td>{{dataItem.Email}}</td>
+                    <td>{{dataItem["NameUser"]}}</td> 
                    </h3>
 
