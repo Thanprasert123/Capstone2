@@ -25,7 +25,10 @@ import { InventorystockcardComponent } from './components/inventorystockcard/inv
 import { PurchasingorderComponent } from './components/purchasingorder/purchasingorder.component';
 import { InvoiceComponent } from './components/invoice/invoice.component';
 import { MainComponent } from './components/main/main.component';
-
+import { CashComponent } from './components/cash/cash.component';
+import { AccountreceiveableComponent } from './components/accountreceiveable/accountreceiveable.component';
+import { InventoryComponent } from './components/inventory/inventory.component';
+import { AccountpayComponent } from './components/accountpay/accountpay.component';
 
 @NgModule({
 declarations: [
@@ -48,7 +51,12 @@ PurchasingorderComponent,
 InventorystockcardComponent,
 InvoiceComponent,
 MainComponent,
-GeneralLedgarComponent
+GeneralLedgarComponent,
+CashComponent,
+AccountreceiveableComponent,
+AccountpayComponent,
+InventoryComponent
+
 
 ],
 imports: [

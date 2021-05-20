@@ -14,6 +14,10 @@ import { ManagerComponent } from './components/manager/manager.component';
 import { PurchasingorderComponent } from './components/purchasingorder/purchasingorder.component';
 import { ReconciliationSheetComponent } from './components/reconciliation-sheet/reconciliation-sheet.component';
 import { UserComponent } from './user/user.component';
+import { CashComponent } from './components/cash/cash.component';
+import { InventoryComponent } from './components/inventory/inventory.component';
+import { AccountreceiveableComponent } from './components/accountreceiveable/accountreceiveable.component';
+import { AccountpayComponent } from './components/accountpay/accountpay.component';
 
 
 
@@ -78,7 +82,7 @@ children: [
 
 {path: 'main', component: MainComponent,  
 children: [ 
-  { path: 'inventory', component: InventorystockcardComponent},
+  { path: 'inventorystock', component: InventorystockcardComponent},
 ]},
 
 {path: 'main', component: MainComponent,  
@@ -90,7 +94,33 @@ children: [
 children: [ 
   { path: 'invoice', component: InvoiceComponent},
 ]},
- 
+
+{path: 'main', component: MainComponent,  
+children: [ 
+  { path: 'cash', component:CashComponent },
+]},
+
+{path: 'main', component: MainComponent,  
+children: [ 
+  { path: 'inventory', component: InventoryComponent},
+]},
+
+{path: 'main', component: MainComponent,  
+children: [ 
+  { path: 'accountreceiveable', component: AccountreceiveableComponent},
+]},
+
+{path: 'main', component: MainComponent,  
+children: [ 
+  { path: 'accountpay', component: AccountpayComponent},
+]},
+
+{path: 'main', component: MainComponent,  
+children: [ 
+  { path: 'Manager', component: ManagerComponent},
+]},
+
+
 
   {path: 'User', component: UserComponent}, 
   {path: 'Management', component: ManagementComponent},
@@ -101,9 +131,13 @@ children: [
   {path: 'general-ledgar', component: GeneralLedgarComponent},
   {path: 'reconcilsheet', component: ReconciliationSheetComponent},
   {path: 'income', component: IncomestatementComponent},
-  {path: 'inventory', component:InventorystockcardComponent},
+  {path: 'inventorystat', component:InventorystockcardComponent},
   {path: 'purchase', component:PurchasingorderComponent},
-  {path: 'invoice', component: InvoiceComponent}
+  {path: 'invoice', component: InvoiceComponent},
+  {path: 'cash' , component: CashComponent},
+  {path: 'inventory', component: InventoryComponent},
+  {path: 'accountreceiveable', component: AccountreceiveableComponent},
+  {path: 'accountpay', component: AccountpayComponent}
 
 
   // {path: 'manage', component: DashboardComponent},
