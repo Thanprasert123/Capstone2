@@ -18,6 +18,7 @@ import { CashComponent } from './components/cash/cash.component';
 import { InventoryComponent } from './components/inventory/inventory.component';
 import { AccountreceiveableComponent } from './components/accountreceiveable/accountreceiveable.component';
 import { AccountpayComponent } from './components/accountpay/accountpay.component';
+import { SaleofficeComponent } from './saleoffice/saleoffice.component';
 
 
 
@@ -42,6 +43,8 @@ const routes: Routes = [
   children: [ 
     { path: 'Management', component:  ManagementComponent},
 ]},
+
+{path: 'testdate',component:SaleofficeComponent},
 
 
 {path: 'main', component: MainComponent,  
@@ -120,7 +123,7 @@ children: [
   { path: 'Manager', component: ManagerComponent},
 ]},
 
-
+  
 
   {path: 'User', component: UserComponent}, 
   {path: 'Management', component: ManagementComponent},

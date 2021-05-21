@@ -1,7 +1,7 @@
 import { TemplateDefinitionBuilder } from '@angular/compiler/src/render3/view/template';
 import { Component, OnInit } from '@angular/core';
-import {User} from 'src/app/Model/users'
-import {NetworkService} from 'src/app/Service/network.service'
+import {User} from 'src/app/Model/users';
+import {NetworkService} from 'src/app/Service/network.service';
 
 @Component({
   selector: 'app-user',

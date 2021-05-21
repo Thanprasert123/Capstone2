@@ -11,7 +11,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { UserComponent } from './user/user.component';
-
+import { FormsModule } from '@angular/forms';
+import { ChartsModule, WavesModule } from 'angular-bootstrap-md';
 
 import { Routes, RouterModule } from '@angular/router';
 import { ManagementComponent } from './components/management/management.component';
@@ -29,45 +30,46 @@ import { CashComponent } from './components/cash/cash.component';
 import { AccountreceiveableComponent } from './components/accountreceiveable/accountreceiveable.component';
 import { InventoryComponent } from './components/inventory/inventory.component';
 import { AccountpayComponent } from './components/accountpay/accountpay.component';
+import { SaleofficeComponent } from 'src/app/saleoffice/saleoffice.component';
 
 @NgModule({
-declarations: [
-AppComponent,
-HeaderComponent,
-MenuComponent,
-FooterComponent,
-DashboardComponent,
-LoginComponent,
-UserComponent,
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MenuComponent,
+    FooterComponent,
+    DashboardComponent,
+    LoginComponent,
+    UserComponent,
 
-ManagementComponent,
-ManagerComponent,
-FinanceComponent,
-JournalizingTransactionComponent,
-ReconciliationSheetComponent,
-IncomestatementComponent,
-InventorystockcardComponent,
-PurchasingorderComponent,
-InventorystockcardComponent,
-InvoiceComponent,
-MainComponent,
-GeneralLedgarComponent,
-CashComponent,
-AccountreceiveableComponent,
-AccountpayComponent,
-InventoryComponent
-
-
-],
-imports: [
-BrowserModule,
-AppRoutingModule,
-HttpClientModule,
-RouterModule
-
-],
-providers: [],
-bootstrap: [AppComponent]
+    ManagementComponent,
+    ManagerComponent,
+    FinanceComponent,
+    JournalizingTransactionComponent,
+    ReconciliationSheetComponent,
+    IncomestatementComponent,
+    InventorystockcardComponent,
+    PurchasingorderComponent,
+    InventorystockcardComponent,
+    InvoiceComponent,
+    MainComponent,
+    GeneralLedgarComponent,
+    CashComponent,
+    AccountreceiveableComponent,
+    AccountpayComponent,
+    InventoryComponent,
+    SaleofficeComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule,
+    FormsModule,
+    ChartsModule,
+    WavesModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
+export class AppModule {}
