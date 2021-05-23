@@ -14,8 +14,7 @@
               <input type="date" data-date="" data-date-format="DD/MM/YYYY" value="2020-08-09"  > -->
 
             <div>
-              <h1>TestFar</h1>
-              <label for="my name">My name:</label>
+              <label for="my name">Date:</label>
               <input
                 type="date"
                 id="brithday"
@@ -23,7 +22,7 @@
                 [(ngModel)]="myDate"
               />
               <button (click)="myFunc()">Submit</button>
-              <h2>{{ o_list }}</h2>
+              <!-- <h1>{{ o_list }}</h1> -->
             </div>
 
             <!--                 
@@ -277,6 +276,7 @@
                           [colors]="chartColors"
                           [options]="chartOptions"
                           [legend]="true"
+                         
                           (chartHover)="chartHovered($event)"
                           (chartClick)="chartClicked($event)"
                         >

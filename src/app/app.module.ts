@@ -12,7 +12,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
-import { ChartsModule, WavesModule } from 'angular-bootstrap-md';
+import { ChartsModule, WavesModule, TableModule } from 'angular-bootstrap-md';
 
 import { Routes, RouterModule } from '@angular/router';
 import { ManagementComponent } from './components/management/management.component';
@@ -68,8 +68,9 @@ import { SaleofficeComponent } from 'src/app/saleoffice/saleoffice.component';
     FormsModule,
     ChartsModule,
     WavesModule,
+    TableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

@@ -11,7 +11,10 @@
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
+ /* max-width:960px;
+  min-height:100vh; */
 }
+
 
 h1,
 h2,

@@ -66,7 +66,7 @@ export class ManagementComponent implements OnInit {
     `2021-06-01`,
   ];
 
-  public chartType: string = 'line';
+  public chartType: string = 'bar';
 
   public chartDatasets: Array<any> = [
     { data: this.list.slice(0, 31), label: 'My First dataset' },

@@ -1,1 +1,53 @@
-<p>purchasingorder works!</p>
+<div class="content-wrapper">
+    <h1>Purches Order</h1>
+
+    <div>
+        <!-- {{data | json}} -->
+        <div style="width: 50%; margin-left: 50%;">
+            <div class="row">
+                <h5 class="col-7">Po Number :</h5>
+                <p class="col-5"> <select name="p_number" id="p_number" [(ngModel)]='p_number'
+                        (ngModelChange)='selectID()'>
+                        <option *ngFor='let item of ip_order_id' value={{item}}>{{item}}</option>
+                    </select></p>
+            </div>
+            <div class="row">
+                <h5 class="col-7">Payment :</h5>
+                <p class="col-5"> {{data.PaymentNO}}</p>
+            </div>
+            <div class="row">
+                <h5 class="col-7">Date :</h5>
+                <p class="col-5"> {{data.DATE}}</p>
+            </div>
+        </div>
+        <div style="width: 50%;">
+            <div class="row">
+                <h5 class="col-7">Customer ID :</h5>
+                <p class="col-5">{{data.CompanyID}}</p>
+            </div>
+            <div class="row">
+                <h5 class="col-7">Customer :</h5>
+                <p class="col-5"> {{data.Companyname}}</p>
+            </div>
+            <div class="row">
+                <h5 class="col-7">Tax Payer ID :</h5>
+                <p class="col-5"> {{data.TaxNumber}}</p>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <th>Item</th>
+                <th>Price/Liter</th>
+                <th>Q'ty(Liter)</th>
+                <th>Amount</th>
+            </thead>
+            <tbody>
+                <td>{{data.PARTOL_TYPE}}</td>
+                <td>{{data.Price_Liter}}</td>
+                <td>{{data.Q_ty}}</td>
+                <td>{{data.AMOUNT}}</td>
+            </tbody>
+        </table>
+    </div>
+</div>

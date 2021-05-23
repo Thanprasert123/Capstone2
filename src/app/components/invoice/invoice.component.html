@@ -1,1 +1,93 @@
-<p>invoice works!</p>
+<div class="content-wrapper">
+  <h1>Purches Order</h1>
+
+  <div>
+    <!-- {{data | json}} -->
+    <div style="width: 50%;">
+      <div class="row">
+        <h5 class="col-3">Company Name :</h5>
+        <p class="col-5">{{data.CompanyName}}</p>
+      </div>
+      <div class="row">
+        <h5 class="col-3">Address :</h5>
+        <p class="col-5"> {{data.Address}}</p>
+      </div>
+    </div>
+
+    <div style="width: 50%; margin-left: 50%;">
+      <div class="row">
+        <h5 class="col-7">Invoice Number :</h5>
+        <div class="col-5">
+          <select name="i_number" id="i_number" [(ngModel)]='i_number' (ngModelChange)='selectINo()'>
+            <option *ngFor='let item of ip_invoice_id' value={{item}}>{{item}}</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <h5 class="col-7">Po No. :</h5>
+        <p class="col-5"></p>
+      </div>
+      <div class="row">
+        <h5 class="col-7">Payment No. :</h5>
+        <p class="col-5"> {{data.PaymentNO}}</p>
+      </div>
+      <div class="row">
+        <h5 class="col-7">Date :</h5>
+        <p class="col-5"> {{data.DATE}}</p>
+      </div>
+    </div>
+
+    <div style="width: 50%;">
+      <div class="row">
+        <h5 class="col-3">Customer ID :</h5>
+        <p class="col-5">{{data.CompanyID}}</p>
+      </div>
+      <div class="row">
+        <h5 class="col-3">Customer :</h5>
+        <p class="col-5"> {{data.Companyname}}</p>
+      </div>
+      <div class="row">
+        <h5 class="col-3">Tax Payer ID :</h5>
+        <p class="col-5"> {{data.TaxNumber}}</p>
+      </div>
+    </div>
+
+    <table class="table">
+      <thead>
+        <th>Date</th>
+        <th>Filling Time</th>
+        <th>Item</th>
+        <th>Price/Liter</th>
+        <th>Q'ty(Liter)</th>
+        <th>Amount</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{data.DATE}}</td>
+          <td>{{data.FillingTime}}</td>
+          <td>{{data.PARTOL_TYPE}}</td>
+          <td>{{data.Price_Liter}}</td>
+          <td>{{data.Q_ty}}</td>
+          <td>{{data.AMOUNT}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Vat 7% (inclusive)</td>
+          <td>{{data.Vat_7_inclusive}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Grand Total</td>
+          <td>{{data.GrandTotal}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>
